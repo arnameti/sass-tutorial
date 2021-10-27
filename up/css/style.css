@@ -1,2 +1,40 @@
+/*
+:root {
+  --color-primary: yellowgreen;
+}
+
+
 body {
-  background-color: red; }
+  background-color: var(--color-primary);
+}
+*/
+/*
+$color-primary: yellowgreen;
+
+
+body {
+  background-color: $color-primary;
+}
+*/
+/*
+$color-primary: #303960;
+$color-secondary: #ea9a69;
+$color-tertiary: #f8b24f;
+$color-white: #fff;
+*/
+/*
+section {
+  //background-color: $color-primary;
+  background-color: map-get($colors, color-primary);
+}
+
+h2 {
+  // color: $color-secondary;
+  color: map-get($colors, color-secondary);
+}
+
+p {
+  // color: $color-white;
+  color: map-get($colors, color-white);
+}
+*/

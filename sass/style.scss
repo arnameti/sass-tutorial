@@ -1,3 +1,71 @@
-body {
-  background-color: red;
+// ********************* START - Lesson 6 - Sass Variables ***********************************
+
+// CSS Variables
+
+/*
+:root {
+  --color-primary: yellowgreen;
 }
+
+
+body {
+  background-color: var(--color-primary);
+}
+*/
+
+// --------------------------------------------------
+
+// Sass Variables
+
+/*
+$color-primary: yellowgreen;
+
+
+body {
+  background-color: $color-primary;
+}
+*/
+
+// *********************************END*****************************************************
+
+// ********************* START - Lesson 7 - Sass Maps *************************************
+
+/*
+$color-primary: #303960;
+$color-secondary: #ea9a69;
+$color-tertiary: #f8b24f;
+$color-white: #fff;
+*/
+
+// Sass Maps => object => key-value pairs
+
+$colors: (
+  "color-primary": #303960,
+  "color-secondary": #ea9a96,
+  "color-tertiary": #f8b24f,
+  "color-white": #fff,
+);
+
+/*
+section {
+  //background-color: $color-primary;
+  background-color: map-get($colors, color-primary);
+}
+
+h2 {
+  // color: $color-secondary;
+  color: map-get($colors, color-secondary);
+}
+
+p {
+  // color: $color-white;
+  color: map-get($colors, color-white);
+}
+*/
+// *********************************END*****************************************************
+
+// ********************* START - Lesson 8 - Sass Nesting ***********************************
+
+// *********************************END*****************************************************
+
+// ********************* START - Lesson 9 - Partials & Imports *****************************
