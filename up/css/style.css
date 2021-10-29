@@ -38,3 +38,106 @@ p {
   color: map-get($colors, color-white);
 }
 */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*
+.section {
+  //background-color: $color-primary;
+  background-color: color(color-primary);
+  padding: 40px;
+
+  &__content {
+    background-color: color(color-secondary);
+  }
+}
+*/
+/*
+
+@mixin section-styling($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+  flex-direction: $direction;
+}
+
+.section-1 {
+    background-color: color(color-primary);
+    margin-bottom: 10px;
+
+    @include section-styling(row);
+
+  &__content:last-child {
+    margin-left: 200px;
+  }
+}
+
+.section-2 {
+  background-color: color(color-tertiary);
+  margin-bottom: 10px;
+
+  @include section-styling(column);
+}
+
+//Example 2: Declaring Media Queries
+
+
+$bpDesktop: 1000px;
+@mixin media-desktop {
+  @media screen and (max-width: $bpDesktop) {
+    @content;
+  } 
+}
+
+.section-1 {
+  @include media-desktop {
+    flex-direction: column;
+  }
+}
+
+*/
+/*
+.section-1 {
+  background-color: color(color-primary);
+
+  &__content {
+    padding: 20px;
+    color: color(color-white);
+
+    &--title {
+      margin: 15px 0;
+      font-family: Arial, Helvetica, sans-serif;
+      letter-spacing: 2px;
+    }
+
+    &--para {
+      @extend .section-1__content--title;
+    }
+  }
+}
+
+.section-2 {
+  &__content {
+    &--para {
+      @extend .section-1__content--title;
+    }
+  }
+}
+*/
+.section-1 {
+  background-color: #303960; }
+  .section-1__content {
+    padding: 20px;
+    color: #fff; }
+
+.section-1--title, .section-1--para {
+  margin: 15px 0;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 2px; }
